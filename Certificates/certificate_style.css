@@ -1,7 +1,17 @@
+@charset "UTF-8";
+body {
+  background-color: #F0EAD6;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
 .tab {
     overflow: hidden;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     background-color: #f1f1f1;
+    height: 50px;
   }
   
   /* Style the buttons that are used to open the tab content */
@@ -13,16 +23,20 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
+    height: 50px;
+    width: 150px;
+    font-size: large;
   }
   
-  /* Change background color of buttons on hover */
   .tab button:hover {
     background-color: #ddd;
+    text-decoration: underline;
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
     background-color: #ccc;
+    text-decoration: underline;
   }
   
   /* Style the tab content */
@@ -32,3 +46,38 @@
     border: 1px solid #ccc;
     border-top: none;
   }
+  
+  /*style for the close button (X)*/
+  .closebutton {
+    width: 25px;
+    height: 25px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .closebutton:hover, .closebutton:active {
+    background-color: red;
+    color: white;
+  }
+
+  h1 {
+    background-color: #f1f1f1;
+    line-height: 100px;
+  }
+
+  .text_halfway_down {
+    
+  }
+
+a {
+    color: rgb(185, 16, 185);
+    text-decoration: none;
+    font-size: 25px;
+}
+a:hover, a:active {
+    color: blue;
+    text-decoration: underline;
+}

@@ -6,8 +6,8 @@
 </div>
   
   <div id="Python" class="tabcontent">
-    <span onclick="this.parentElement.style.display='none'">x</span>
-    <h3>Python</h3>
+    <div class = 'closebutton'; onclick="closebutton(event, 'Python')">x</div>
+    <h1>Python</h1>
     <p>
       <img src ='Coursera Using Python to Access Web Data.pdf.jpg' alt="Error">
       <img src ='Coursera Python Data Structures.pdf.jpg' alt="Error">
@@ -15,10 +15,32 @@
       <img src ='Coursera Programming for Everybody.pdf.jpg' alt="Error">
     </p>
   </div>
+<footer class = "text_halfway_down">
+  <br>
+  <a href = '../index.html'>Return to homepage</a>
+  <div>Click on the tabs to view certificates for the desired language.</div>
+</footer>
 
 
 <!--Javascript-->
 <script>
+function closebutton(evt, tabName) {
+  var i, tabcontent, tablinks;
+  
+  // Get all elements
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // remove all 'actives'
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+}
+
 function opentab(evt, tabName) {
     var i, tabcontent, tablinks;
   
