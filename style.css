@@ -1,0 +1,20 @@
+@charset "UTF-8";
+body {
+    background-color: #F0EAD6;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+a {
+    color: rgb(185, 16, 185);
+    text-decoration: none;
+    font-size: 25px;
+}
+a:hover, a:active {
+    color: blue;
+    text-decoration: underline;
+}
