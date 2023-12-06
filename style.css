@@ -4,17 +4,87 @@ body {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+   
+}
+h1, h2 {
     text-align: center;
 }
-h1 {
-    font-size: 50px;
-}
+
 a {
     color: rgb(185, 16, 185);
     text-decoration: none;
     font-size: 25px;
+    display:block;
+    text-align: center;
 }
 a:hover, a:active {
     color: blue;
     text-decoration: underline;
+}
+
+.centered {
+    text-align: center;
+}
+
+.TabBar{
+    overflow: hidden;
+    background-color: rgb(21, 71, 52);
+    height: 75px;
+}
+.Logo{
+    height: 73px;
+    float: left;
+    padding-left: 2%;
+}
+.NameTabButton{
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    height: 75px;
+    width: 10%;
+    font-size: xx-large;
+    color: rgb(206, 184, 136);
+    font-weight: bold;
+}
+#Name.NameTabButton{
+    color:rgb(206, 184, 136);
+    padding-left: 15%;
+}
+.backgroundIMG{
+    background-image: url('campus images/cropped_20201211_aerial_campus_sunrise_havener_mcnutt.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+.backgroundIMG > img {
+    width: 15vh;
+    height: 15vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-90%);
+}
+.backgroundIMG > h1{
+    font-size: 7vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
+}
+.backgroundIMG > h2{
+    font-size: 3vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(350%);
+}
+
+#example{
+    scroll-behavior: smooth;
 }
