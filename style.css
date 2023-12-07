@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #F0EAD6;
     color: black;
@@ -10,49 +14,73 @@ h1, h2 {
     text-align: center;
 }
 
-a {
-    color: rgb(185, 16, 185);
+/* styling the links */
+.centered_links {
+    text-align: center;
+    height: 5vh;
+}
+.centered_links > a {
+    color: black;
+    background-color: white;
     text-decoration: none;
-    font-size: 25px;
-    display:block;
+    font-weight: bold;
+    font-size: 20px;
     text-align: center;
+    height: 5vh;
+    border: 3px solid rgba(0, 0, 0,.1);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px ;
 }
-a:hover, a:active {
-    color: blue;
-    text-decoration: underline;
+.centered_links > a:hover, .centered_links > a:active {
+    background-color: rgb(211,211,211)
 }
 
-.centered {
-    text-align: center;
-}
-
-.TabBar{
+/* styling the navbar */
+.NavBar{
+    z-index: 99999;
+    margin: 0;
     overflow: hidden;
+    background-color: rgba(21, 71, 52, 0);
+    height: 4vh;
+    line-height: 4vh;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.NavBar.scrolled{
     background-color: rgb(21, 71, 52);
-    height: 75px;
+    transition: background-color 200ms linear;
 }
 .Logo{
-    height: 73px;
+    height: 3.9vh;
     float: left;
     padding-left: 2%;
 }
-.NameTabButton{
+.TabButton{
     background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    height: 75px;
-    width: 10%;
-    font-size: xx-large;
-    color: rgb(206, 184, 136);
+    text-decoration: none;
+    font-size: 1vw;
+    color: rgb(217, 171, 40);
     font-weight: bold;
+    margin-left: 2%;
 }
-#Name.NameTabButton{
-    color:rgb(206, 184, 136);
-    padding-left: 15%;
+.TabButton:hover, .TabButton:active{
+    color: rgb(211,211,211);
 }
+#Name.TabButton{
+    margin-top: 5vh;
+    font-size: 1.3vw;
+    margin-left: 20%
+}
+#About_Button.TabButton{
+    margin-left: 10%;
+}
+
+/* styling the start of page*/
 .backgroundIMG{
     background-image: url('campus images/cropped_20201211_aerial_campus_sunrise_havener_mcnutt.jpg');
     background-repeat: no-repeat;
@@ -85,6 +113,4 @@ a:hover, a:active {
     transform: translateX(-50%) translateY(350%);
 }
 
-#example{
-    scroll-behavior: smooth;
-}
+/* styling the about page */
