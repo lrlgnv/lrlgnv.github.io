@@ -4,17 +4,30 @@ html {
 }
 
 body {
+    margin: 0;
     background-color: #F0EAD6;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
    
 }
-h1, h2 {
+
+/* styling the links 
+TRY THIS
+<div class="centered-div">
+  This div is centered horizontally.
+</div>
+
+<style>
+.centered-div {
+  width: 50%;
+  margin: auto;
+}
+</style>
+*/
+#Links{
     text-align: center;
 }
-
-/* styling the links */
 .centered_links {
     text-align: center;
     height: 5vh;
@@ -26,35 +39,50 @@ h1, h2 {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
-    height: 5vh;
-    border: 3px solid rgba(0, 0, 0,.1);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px ;
+    height: 2vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 2.8vh;
+    padding-right: 2.8vh;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
+    display: inline-block;
 }
 .centered_links > a:hover, .centered_links > a:active {
     background-color: rgb(211,211,211)
 }
 
 /* styling the navbar */
-.NavBar{
+#NavBar{
     z-index: 99999;
     margin: 0;
     overflow: hidden;
-    background-color: rgba(21, 71, 52, 0);
     height: 4vh;
+    background-color: rgba(18, 71, 52,0);
     line-height: 4vh;
-    margin-top: 0;
+    margin-top: 1.5vh;
     position: fixed;
     top: 0;
     width: 100%;
+    transition: margin-top 600ms;
+    transition: background-color 400ms linear;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0; margin-top: 1vh;
+    }
+    100% {
+        opacity: 1; margin-top: 0;
+    }
 }
 
-.NavBar.scrolled{
-    background-color: rgb(21, 71, 52);
-    transition: background-color 200ms linear;
+#NavBar.solid{
+    animation-name: fadeIn;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    background-color: rgb(18, 71, 52);
+    margin-top: 0;
 }
+
 .Logo{
     height: 3.9vh;
     float: left;
@@ -64,7 +92,7 @@ h1, h2 {
     background-color: inherit;
     text-decoration: none;
     font-size: 1vw;
-    color: rgb(217, 171, 40);
+    color: rgb(209, 184, 136);
     font-weight: bold;
     margin-left: 2%;
 }
@@ -82,7 +110,7 @@ h1, h2 {
 
 /* styling the start of page*/
 .backgroundIMG{
-    background-image: url('campus images/cropped_20201211_aerial_campus_sunrise_havener_mcnutt.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1)), url('campus images/cropped_20201211_aerial_campus_sunrise_havener_mcnutt.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -90,6 +118,7 @@ h1, h2 {
     color: white;
     position: relative;
 }
+
 .backgroundIMG > img {
     width: 15vh;
     height: 15vh;
@@ -97,6 +126,9 @@ h1, h2 {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-90%);
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    object-fit: fill;
 }
 .backgroundIMG > h1{
     font-size: 7vh;
@@ -114,3 +146,33 @@ h1, h2 {
 }
 
 /* styling the about page */
+#About{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+}
+#About > img{
+    max-height: 25vh;
+    max-width: 20vw;
+    border-width: 3px solid rgba(255, 255, 255, 0.5);
+    padding-left: 25vw;
+}
+#About > div{
+    padding-left: 3vw;
+    float: left;
+    margin: 0;
+    font-size: 20px;
+}
+#About > div > h1{
+    margin: 0;
+    font-size: 50px;
+}
+#About > div > h2{
+    margin: 0;
+    font-size: 20px;
+}
+ul{
+    margin: 8px;
+
+}
