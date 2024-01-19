@@ -181,12 +181,11 @@ ul{
     justify-content: center;
 }
 .block{
-    display: block;
+    display: inline-block;
     text-align: center;
     width: fit-content;
     background-color: rgb(178, 180, 178);
     color: black;
-    margin-left: 5vw;
     width: 20vw;
     height: 25vw;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
