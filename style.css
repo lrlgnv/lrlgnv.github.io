@@ -5,50 +5,11 @@ html {
 
 body {
     margin: 0;
-    background-color: #F0EAD6;
+    background-color: #D6D1CA;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
    
-}
-
-/* styling the links 
-TRY THIS
-<div class="centered-div">
-  This div is centered horizontally.
-</div>
-
-<style>
-.centered-div {
-  width: 50%;
-  margin: auto;
-}
-</style>
-*/
-#Links{
-    text-align: center;
-}
-.centered_links {
-    text-align: center;
-    height: 5vh;
-}
-.centered_links > a {
-    color: black;
-    background-color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    height: 2vh;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;
-    padding-left: 2.8vh;
-    padding-right: 2.8vh;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
-    display: inline-block;
-}
-.centered_links > a:hover, .centered_links > a:active {
-    background-color: rgb(211,211,211)
 }
 
 /* styling the navbar */
@@ -56,10 +17,10 @@ TRY THIS
     z-index: 99999;
     margin: 0;
     overflow: hidden;
-    height: 4vh;
+    height: 9vh;
     background-color: rgba(18, 71, 52,0);
-    line-height: 4vh;
-    margin-top: 1.5vh;
+    line-height: 9vh;
+    margin-top: 1vh;
     position: fixed;
     top: 0;
     width: 100%;
@@ -68,7 +29,7 @@ TRY THIS
 }
 @keyframes fadeIn {
     0% {
-        opacity: 0; margin-top: 1vh;
+        opacity: 1; margin-top: 1vh;
     }
     100% {
         opacity: 1; margin-top: 0;
@@ -84,28 +45,31 @@ TRY THIS
 }
 
 .Logo{
-    height: 3.9vh;
+    height: 8.9vh;
     float: left;
     padding-left: 2%;
 }
 .TabButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     background-color: inherit;
     text-decoration: none;
-    font-size: 1vw;
+    font-size: 3.5vh;
     color: rgb(209, 184, 136);
-    font-weight: bold;
     margin-left: 2%;
 }
 .TabButton:hover, .TabButton:active{
     color: rgb(211,211,211);
 }
 #Name.TabButton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     margin-top: 5vh;
-    font-size: 1.3vw;
-    margin-left: 20%
+    font-size: 4vh;
+    margin-left: 10%
 }
 #About_Button.TabButton{
-    margin-left: 10%;
+    margin-left: 5%;
 }
 
 /* styling the start of page*/
@@ -153,26 +117,162 @@ TRY THIS
     padding-top: 5vh;
 }
 #About > img{
-    max-height: 25vh;
-    max-width: 20vw;
-    border-width: 3px solid rgba(255, 255, 255, 0.5);
-    padding-left: 25vw;
+    height: 35vh;
+    width: 26.95vh;
+    padding-left: 15vw;
 }
 #About > div{
     padding-left: 3vw;
     float: left;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 #About > div > h1{
     margin: 0;
-    font-size: 50px;
+    font-size: 45px;
 }
 #About > div > h2{
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 ul{
     margin: 8px;
 
+}
+
+/* styling the links */
+#Links{
+    text-align: center;
+}
+.centered_links {
+    text-align: center;
+    height: 5vh;
+}
+.centered_links > a {
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    height: 2vh;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+    padding-left: 2.8vh;
+    padding-right: 2.8vh;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
+    display: inline-block;
+}
+.centered_links > a:hover, .centered_links > a:active {
+    background-color: rgb(211,211,211)
+}
+
+/*styling Education section */
+#Education{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+#Education > div{
+    text-align: center;
+    font-size: 18px;
+}
+#Education > p{
+    display: flex;
+    justify-content: center;
+}
+.block{
+    display: block;
+    text-align: center;
+    width: fit-content;
+    background-color: rgb(178, 180, 178);
+    color: black;
+    margin-left: 5vw;
+    width: 20vw;
+    height: 25vw;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .1);
+}
+/* styling the Certifications section */
+#Certifications > div{
+    text-align: center;
+    font-size: 18px;
+}
+#Certifications > p{
+    display: flex;
+    justify-content: center;
+}
+.block > a{
+    color: black;
+    text-decoration: none;
+}
+/* styling the work experience section */
+#Experience > img{
+    height: 18.42vw;
+    width: 35vw;
+}
+/* styling the footer */
+#Footer{
+    background-color: rgb(11, 43, 30);
+    color: rgb(209, 184, 136);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 15px;
+    position: relative;
+    bottom: 0;
+    line-height: 5vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    min-width: 100%;
+}
+#Footer > div{
+    display: inline-block;
+    width: 50%;
+    text-decoration: none;
+}
+
+.FooterContacts{
+    text-align: center;
+}
+.FooterContacts > p > a{
+    color: rgb(209, 184, 136);
+    text-decoration: underline;
+    text-decoration-color: rgb(114, 191, 68);
+}
+.FooterContacts > p{
+    margin: 0;
+    padding: 0;
+}
+
+.Footer_Description{
+    display: inline-block;
+    width: 50%;
+    font-size: 15px;
+    color: rgb(209, 184, 136);
+    text-decoration: none;
+}
+.Footer_Description > p{
+    margin: 0;
+    padding: 0;
+    padding-left: 5vw;
+}
+.lima_text{
+    font-size: 15px;
+    color: rgb(114, 191, 68);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-wrap: pretty;
+}
+.FooterLogo{
+    display: inline;
+    height: 10vw;
+    width: 12.3vw;
+    float: left;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.Footer_Description > p > a{
+    color: rgb(209, 184, 136);
+    text-decoration: underline;
+    text-decoration-color: rgb(114, 191, 68);
 }
