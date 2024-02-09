@@ -94,11 +94,12 @@ body {
     vertical-align: middle;
 }
 .aligner > img {
-    width: 15vh;
-    height: 15vh;
-    border: 5px solid rgba(255, 255, 255, 1);
+    object-fit: cover;
+    height: 25vh;
+    width: auto;
     border-radius: 50%;
-    object-fit: fill;
+    border: 10px solid rgba(255, 255, 255, 1);
+    
 }
 .aligner > span{
     font-size: 7vh;
@@ -114,8 +115,9 @@ body {
 }
 #About > div > img{
     display: block;
+    object-fit: cover;
     height: 35vh;
-    width: 26.95vh;
+    width: 19.4vh;
     margin-left: 9vw;
     border: 1px solid white;
     position: sticky;
