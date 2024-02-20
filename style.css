@@ -502,6 +502,11 @@ ul{
     font-size: 18px;
     text-wrap: pretty;
 }
+@media (max-width: 610px){
+    .lima_text{
+        clear: both;
+    }
+}
 .FooterLogo{
     display: inline;
     height: min(10vw, 100px);
