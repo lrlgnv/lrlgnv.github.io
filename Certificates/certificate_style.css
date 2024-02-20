@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: #F0EAD6;
+  background-color: #D6D1CA;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -20,7 +20,7 @@ img {
   }
   
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+  .tab > button {
     background-color: inherit;
     float: left;
     border: none;
@@ -28,8 +28,7 @@ img {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    height: 50px;
-    width: 10%;
+    width: max(25vw, fit-content);
     font-size: large;
   }
   
