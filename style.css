@@ -351,11 +351,29 @@ ul{
     border-radius: 10%;
     margin-top: 5vh;
 }
-@media (min-width: 992px) and (max-width: 1500px){
+@media (min-width: 1321px){
     .block{
         margin-left: 5%;
         width: 30vw;
-        height: 35vw;
+        height: 30vw;
+        font-size: 20px;
+    }
+}
+@media (min-width: 1141px) and (max-width: 1320px){
+    .block{
+        font-size: 15px;
+        margin-left: 5%;
+        width: 30vw;
+        height: 40vw;
+        font-size: 20px;
+}
+}
+@media (min-width: 992px) and (max-width: 1140px){
+    .block{
+        font-size: 15px;
+        margin-left: 5%;
+        width: 30vw;
+        height: 50vw;
         font-size: 20px;
     }
 }
@@ -363,15 +381,15 @@ ul{
     .block{
         margin-left: 30%;
         width: 40vw;
-        height: 40vw;
+        height: fit-content;
         font-size: 20px;
     }
 }
 @media (max-width: 767px) and (min-width: 600px){
     .block{
         margin-left: 25%;
-        width: 50vw;
-        height: 60vw;
+        width: 60vw;
+        height: fit-content;
         font-size: 20px;
     }
 }
@@ -379,7 +397,7 @@ ul{
     .block{
         margin-left: 5%;
         width: 90vw;
-        height: 90vw;
+        height: fit-content;
         font-size: 20px;
     }
 }
